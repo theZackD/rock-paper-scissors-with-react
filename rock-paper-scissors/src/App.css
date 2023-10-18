@@ -46,12 +46,14 @@ Header {
   box-sizing: border-box;
   font-size: 40px;
   height: 150px;
+  width: 700px;
   margin-bottom: 50px;
   align-items: center;
   border: solid 3px rgba(255, 255, 255, 0.226);
   padding: 10px;
   border-radius: 10px;
   position: relative;
+  margin-bottom: 5%;
   /* top: 0; */
 }
 
@@ -91,18 +93,82 @@ Header {
 .inside-wrap {
   width: 200px;
   height: 200px;
-  background-color: #4664F4;
   border-radius: 50%;
   display: flex;
   place-content: center;
   align-items: center;
+
+}
+
+#Rck {
+  background-color: #DB2E4D;
+  box-shadow: #c51938 0px 10px;
+  position: absolute;
+  right: 15%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#pap {
+  background-color: #4664F4;
+  border-radius: 50%;
   box-shadow: #1F3757 0px 10px;
+  position: absolute;
+  left: 15%;
+  cursor: pointer;
+}
+
+#pap:hover, #Rck:hover {
+  top: -10px;
+}
+
+#Sciss {
+  background-color: #EB9F0E;
+  box-shadow: #c28109 0px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 36.5%;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+#Sciss:hover {
+  bottom: 10px;
+}
+
+.hover-wrap {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position:absolute;
+  background-color: transparent;
+  top: -20px;
+  left: -25px;
+  z-index: 0;
+  transition: all 0.5 ease;
+}
+
+.hover-wrap:hover {
+  background-color: #ffffff1a;
+}
+
+#Triangle {
+  position: absolute;
+  bottom: 50px;
+  z-index: -2;
 }
 
 .Choices {
   display: flex;
-  outline: auto;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  width: 700px;
+  height: 430px;
 }
+
+
 
 .RULES {
   position: fixed;
@@ -121,4 +187,59 @@ Header {
 
 .RULES:hover{
   background-color: #ffffff1a;
+}
+
+.Rules-container {
+  background-color: aliceblue;
+  height: 415px;
+  width: 400px;
+  display: grid;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.rules-con-con {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 105%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+.RHead {
+  color: #3B4262;
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: -40px;
+  margin-bottom: -30px;
+  gap: 30px;
+  padding-left: 50px;
+  height: 90px;
+}
+
+#Ruletxt {
+  grid-column: 1/2;
+  margin-left: 0;
+  font-size: 32px;
+  font-weight: 700;
+  margin-right: 200px;
+}
+
+#RuleImg {
+  width: min-content;
+  margin:auto;
+}
+
+#Close {
+  cursor: pointer;
 }
