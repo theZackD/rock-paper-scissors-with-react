@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw; */
+  box-sizing: border-box;
+  background-image: radial-gradient(#1F3757,#131537);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Title {
+  width: 8ch;
+  text-shadow: rgb(0, 0, 0) 0px 2px 10px;
+  line-height: 32px;
+}
+
+
+
+.choice {
+  width: fit-content;
+  height: fit-content;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 50%;
+  box-shadow: inset 0px 10px 10px gray;
+}
+
+Header {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 40px;
+  height: 150px;
+  margin-bottom: 50px;
+  align-items: center;
+  border: solid 3px rgba(255, 255, 255, 0.226);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  /* top: 0; */
+}
+
+.Score-container {
+  box-sizing: border-box;
+  width: 150px;
+  height: 115px;
+  margin: auto;
+  margin-right: 0;
+  font-size: 16px;
+  display: grid;
+  grid-template-rows: 21.75px 61.25px;
+  gap: 20px;
+  background-color: aliceblue;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#scoreLabel {
+  color: rgb(25, 25, 190);
+  font-weight: 600;
+  font-size: 24px;
+  grid-row: 1/2;
+  margin-top: 0;
+}
+
+#Score {
+  grid-row: 2/3;
+  color: rgb(78, 78, 83);
+  align-self: center;
+  justify-self: center;
+  font-size: 64px;
+}
+
+.inside-wrap {
+  width: 200px;
+  height: 200px;
+  background-color: #4664F4;
+  border-radius: 50%;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  box-shadow: #1F3757 0px 10px;
+}
+
+.Choices {
+  display: flex;
+  outline: auto;
+}
+
+.RULES {
+  position: fixed;
+  width: 128px;
+  height: 40px;
+  bottom: 50px;
+  right: 50px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: #FFFFFF solid 2px;
+  cursor: pointer;
+}
+
+.RULES:hover{
+  background-color: #ffffff1a;
+}
