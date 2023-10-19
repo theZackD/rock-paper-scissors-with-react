@@ -102,16 +102,16 @@ function App() {
 
   }
 
-  let HandleMakeChoice : (event: SyntheticEvent) => void = function(){
-    if((event.target.id === 'P')){
+  let HandleMakeChoice : (e: SyntheticEvent) => void = function(e){
+    if((e.target.id === 'P')){
       setPlayerPick(PaperPick)
-    } else if((event.target.id === 'R')){
+    } else if((e.target.id === 'R')){
       setPlayerPick(RockPick)
     } else {
       setPlayerPick(ScissPick)
     }
 
-    Player = event.target.id
+    Player = e.target.id
 
     let rdnumber : number = Math.floor(Math.random()*3)
     let RdHousePick = ChoiceArray[rdnumber]
