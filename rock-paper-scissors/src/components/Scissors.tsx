@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+
 import Sciss from './images/icon-scissors.svg'
 
 const Scissors = () => {

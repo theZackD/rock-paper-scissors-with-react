@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+
 import icon_paper from './images/icon-paper.svg'
 
 const Paper = () => {

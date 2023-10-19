@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+
 import icon_rock from './images/icon-rock.svg'
 
 const Rock = () => {
