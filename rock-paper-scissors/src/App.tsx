@@ -17,11 +17,10 @@ import Scissors from './components/Scissors'
 //React Code:
 
 const Rps : string = 'ROCK PAPER SCISSORS';
-const Rpsls : string = 'ROCK PAPER SCISSORS LIZARD SPOCK';
 
 function App() {
 
-  const [score, setscore] = useState<number>(0)
+  const [score, setscore] = React.useState<number>(0)
 
   const [Rules_isClicked, setRules_isClicked] = useState<boolean>(false)
 
@@ -103,15 +102,18 @@ function App() {
   }
 
   let HandleMakeChoice : (e: SyntheticEvent) => void = function(e){
-    if((e.target.id === 'P')){
+    
+    const Target = e.target as HTMLDivElement
+    
+    if((Target.id === 'P')){
       setPlayerPick(PaperPick)
-    } else if((e.target.id === 'R')){
+    } else if((Target.id === 'R')){
       setPlayerPick(RockPick)
     } else {
       setPlayerPick(ScissPick)
     }
 
-    Player = e.target.id
+    Player = Target.id
 
     let rdnumber : number = Math.floor(Math.random()*3)
     let RdHousePick = ChoiceArray[rdnumber]
